@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 95%;
+    --foreground: 20 20% 12%;
+
+    --card: 40 50% 98%;
+    --card-foreground: 20 20% 12%;
+
+    --popover: 40 50% 98%;
+    --popover-foreground: 20 20% 12%;
+
+    --primary: 42 100% 55%;
+    --primary-foreground: 20 20% 12%;
+
+    --secondary: 36 30% 92%;
+    --secondary-foreground: 20 20% 12%;
+
+    --muted: 36 20% 93%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 330 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 20% 20%;
+    --input: 20 15% 75%;
+    --ring: 42 100% 55%;
+
+    --radius: 1rem;
+
+    /* Flashcard colors */
+    --flashcard-pink: 330 85% 65%;
+    --flashcard-mint: 170 65% 50%;
+    --flashcard-purple: 240 55% 70%;
+    --flashcard-yellow: 42 100% 55%;
+    --flashcard-coral: 10 80% 65%;
+
+    /* Stats strip colors */
+    --stats-total: 240 55% 70%;
+    --stats-mastered: 170 65% 50%;
+    --stats-progress: 345 65% 65%;
+    --stats-not-started: 320 80% 65%;
+
+    --sidebar-background: 36 33% 95%;
+    --sidebar-foreground: 20 20% 12%;
+    --sidebar-primary: 42 100% 55%;
+    --sidebar-primary-foreground: 20 20% 12%;
+    --sidebar-accent: 36 30% 92%;
+    --sidebar-accent-foreground: 20 20% 12%;
+    --sidebar-border: 20 20% 20%;
+    --sidebar-ring: 42 100% 55%;
+  }
+
+  .dark {
+    --background: 20 14% 12%;
+    --foreground: 36 33% 92%;
+
+    --card: 20 14% 16%;
+    --card-foreground: 36 33% 92%;
+
+    --popover: 20 14% 16%;
+    --popover-foreground: 36 33% 92%;
+
+    --primary: 42 100% 55%;
+    --primary-foreground: 20 20% 12%;
+
+    --secondary: 20 14% 22%;
+    --secondary-foreground: 36 33% 92%;
+
+    --muted: 20 10% 25%;
+    --muted-foreground: 36 15% 60%;
+
+    --accent: 330 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 36 20% 40%;
+    --input: 20 15% 30%;
+    --ring: 42 100% 55%;
+
+    --flashcard-pink: 330 85% 55%;
+    --flashcard-mint: 170 65% 40%;
+    --flashcard-purple: 240 55% 60%;
+    --flashcard-yellow: 42 100% 50%;
+    --flashcard-coral: 10 80% 55%;
+
+    --stats-total: 240 55% 60%;
+    --stats-mastered: 170 65% 40%;
+    --stats-progress: 345 65% 55%;
+    --stats-not-started: 320 80% 55%;
+
+    --sidebar-background: 20 14% 12%;
+    --sidebar-foreground: 36 33% 92%;
+    --sidebar-primary: 42 100% 55%;
+    --sidebar-primary-foreground: 20 20% 12%;
+    --sidebar-accent: 20 14% 22%;
+    --sidebar-accent-foreground: 36 33% 92%;
+    --sidebar-border: 36 20% 40%;
+    --sidebar-ring: 42 100% 55%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@keyframes flip-in {
+  from { transform: rotateY(90deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
