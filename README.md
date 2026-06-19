@@ -3,8 +3,8 @@
 A modern, production-ready flashcard study application built with React, TypeScript, and Tailwind CSS. Features a bold, sketch-inspired design with smooth animations, dark mode, and persistent local storage.
 
 
-- [Github](https://github.com/sukanyagurav/Typing-speed-test)
-- [Netlify](https://typings-speed-test5867.netlify.app/)
+- [Github](https://github.com/sukanyagurav/Flashcard-Quiz-Web-App)
+- [Netlify](https://flash-card-app-2.netlify.app/)
 
 ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4) ![Zustand](https://img.shields.io/badge/Zustand-5-orange)
 
